@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
  
 <p>
-  <b>Name:</b>
+  <b>SET-UP BY:</b>
   <%= @post.name %>
 </p>
  
 <p>
-  <b>Title:</b>
+  <b>TOPIC:</b>
   <%= @post.title %>
 </p>
  
@@ -20,10 +20,10 @@
   <%= join_tags(@post) %>
 </p>
  
-<h2>Comments</h2>
+<h2>MESSAGES</h2>
 <%= render @post.comments %>
  
-<h2>Add a comment:</h2>
+<h2>NEW MESSAGES:</h2>
 <%= render "comments/form" %>
  
  

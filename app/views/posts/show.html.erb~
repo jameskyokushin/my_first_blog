@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
  
 <p>
-  <b>Name:</b>
+  <b>SET-UP BY:</b>
   <%= @post.name %>
 </p>
  
 <p>
-  <b>Title:</b>
+  <b>TOPIC:</b>
   <%= @post.title %>
 </p>
  
@@ -17,10 +17,10 @@
  
 <p>
   <b>Tags:</b>
-  <%= @post.tags.map { |t| t.name }.join(", ") %>
+  <%= join_tags(@post) %>
 </p>
  
-<h2>Comments</h2>
+<h2>MESSAGES</h2>
 <%= render @post.comments %>
  
 <h2>Add a comment:</h2>
